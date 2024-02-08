@@ -1,11 +1,89 @@
-<style>
-div {
-	text-align: center;
-	color: black;
-	font-size: 3em;
-}
-</style>
-<div>
-<h1>Contact Us</h1>
-</div>
-//good
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <style>
+    body {
+      background-color: #f0f0f0; /* Grey background */
+      color: #333; /* Dark grey text */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #008000; /* Green header background */
+      color: #fff; /* White text */
+      text-align: center;
+      padding: 10px;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff; /* White form background */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      display: grid;
+      grid-gap: 10px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #008000; /* Green button background */
+      color: #fff; /* White text */
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #006400; /* Darker green on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Form</h1>
+  </header>
+
+  <main>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <label for="contactInfo">Contact Information (optional):</label>
+      <input type="text" id="contactInfo" name="contactInfo">
+
+      <p>Privacy Assurance Note: Your information is secure with us.</p>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+</body>
+</html>
