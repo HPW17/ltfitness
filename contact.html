@@ -6,36 +6,21 @@
   <title>Contact Form</title>
   <style>
     body {
-      background-color: #f0f0f0; /* Grey background */
-      color: #333; /* Dark grey text */
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
     }
 
-    header {
-      background-color: #6dbd63; /* Green header background */
-      color: #fff; /* White text */
-      text-align: center;
-      padding: 10px;
-    }
-
-    main {
-      max-width: 600px;
+    form {
+      max-width: 400px;
       margin: 20px auto;
-      background-color: #fff; /* White form background */
       padding: 20px;
+      background-color: #f0f0f0; /* Light grey background */
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    form {
-      display: grid;
-      grid-gap: 10px;
-    }
-
     label {
       display: block;
+      margin-bottom: 8px;
       font-weight: bold;
     }
 
@@ -43,11 +28,11 @@
       width: 100%;
       padding: 8px;
       box-sizing: border-box;
-      margin-bottom: 10px;
+      margin-bottom: 16px;
     }
 
     button {
-      background-color: #008000; /* Green button background */
+      background-color: #6dbd63; /* Lighter green button background */
       color: #fff; /* White text */
       padding: 10px;
       border: none;
@@ -55,35 +40,34 @@
     }
 
     button:hover {
-      background-color: #006400; /* Darker green on hover */
+      background-color: #4e9f4e; /* Darker green on hover */
+    }
+
+    p {
+      font-size: 14px;
+      color: #888888;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Contact Form</h1>
-  </header>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-  <main>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required>
 
-      <label for="subject">Subject:</label>
-      <input type="text" id="subject" name="subject" required>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+    <label for="contactInfo">Contact Information (optional):</label>
+    <input type="text" id="contactInfo" name="contactInfo">
 
-      <label for="contactInfo">Contact Information (optional):</label>
-      <input type="text" id="contactInfo" name="contactInfo">
+    <p>Privacy Assurance Note: Your information is secure with us.</p>
 
-      <p>Privacy Assurance Note: Your information is secure with us.</p>
-
-      <button type="submit">Submit</button>
-    </form>
-  </main>
+    <button type="submit">Submit</button>
+  </form>
 
 </body>
 </html>
