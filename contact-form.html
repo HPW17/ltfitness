@@ -1,131 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Form</title>
-	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-		<link href="stylesheets/style.css" rel="stylesheet" type="text/css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/17168e035e.js" crossorigin="anonymous"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    form {
-      max-width: 400px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #f0f0f0; /* Light grey background */
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: bold;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 8px;
-      box-sizing: border-box;
-      margin-bottom: 16px;
-    }
-
-    button {
-      background-color: #6dbd63; /* Lighter green button background */
-      color: #fff; /* White text */
-      padding: 10px;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #4e9f4e; /* Darker green on hover */
-    }
-
-    p {
-      font-size: 14px;
-      color: #888888;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Form</title>
 </head>
-  <header>
-			<h1>LT Fitness & Performance LLC</h1>
-			<div>
-				<img src="images/logo.jpg" alt="LT logo">
-			</div>
-			<nav>
-				<div id="mainNavBar">
-					<ul>
-						<div class="selflink"><li>Home</li></div>
-						<div class="dropdown">
-							<li><a href="kid.html">Kid Fitness</a></li>
-							<div class="dropdown-menu">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
-							</div>
-						</div>
-						<div class="dropdown">
-							<li><a href="adult.html">Adult Fitness</a></li>
-							<div class="dropdown-menu">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
-							</div>
-						</div>
-						<div class="dropdown">
-							<li><a href="store.html">Store</a></li>
-							<div class="dropdown-menu">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
-							</div>
-						</div>
-						<div class="dropdown">
-							<li><a href="about.html">About Us</a></li>
-							<div class="dropdown-menu">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
-							</div>
-						</div>
-						<div class="dropdown">
-							<li><a href="contact.html">Contact Us</a></li>
-							<div class="dropdown-menu">
-								<a href="contact-form.html">Contact Form</a>
-								<a href="job-opportunities.html">Job Opportunities</a>
-							</div>
-						</div>
-					</ul>
-				</div>
-			</nav>
-		</header>
 <body>
 
-  <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    <label for="subject">Subject:</label>
-    <input type="text" id="subject" name="subject" required>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
-    <label for="contactInfo">Contact Information (optional):</label>
-    <input type="text" id="contactInfo" name="contactInfo">
+            <label for="phone">Phone (optional):</label>
+            <input type="tel" id="phone" name="phone">
 
-    <p>Privacy Assurance Note: Your information is secure with us.</p>
+            <label for="email">Email (optional):</label>
+            <input type="email" id="email" name="email">
 
-    <button type="submit">Submit</button>
-  </form>
+            <p class="privacy-note">Your privacy is important to us. We will not share your information.</p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
 </body>
 </html>
