@@ -42,7 +42,7 @@ h1 {
         }
 .job-content {
             /* Your job content styles */
-            padding-left: 15px; /* Adjust as needed to avoid overlapping with the triangle */
+            padding: 15px; /* Adjust as needed to avoid overlapping with the triangle */
         
         }
 h2 {
