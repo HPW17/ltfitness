@@ -35,3 +35,14 @@ h2 {
     color: #555;
     text-align: center;
 }
+.application-contact {
+    margin-top: 30px;
+}
+
+.application-contact ol {
+    padding-left: 20px;
+}
+
+.application-contact p {
+    margin-bottom: 10px;
+}
