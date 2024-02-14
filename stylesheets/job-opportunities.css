@@ -23,9 +23,19 @@ h1 {
 }
 
 .job {
+    position: relative;
+    padding-left: 30px; /* Adjust as needed */
     margin-bottom: 20px;
 }
-
+ .job::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            border-left: 2px solid grey; /* Adjust as needed */
+            height: 20px; /* Adjust as needed */
+        }
 h2 {
     color: #4caf50;
 }
