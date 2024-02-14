@@ -27,14 +27,15 @@ h1 {
     padding-left: 30px; /* Adjust as needed */
     margin-bottom: 20px;
 }
- .job::before {
+.job::before {
             content: "";
             position: absolute;
             top: 50%;
             left: 0;
             transform: translateY(-50%);
-            border-left: 2px solid grey; /* Adjust as needed */
-            height: 20px; /* Adjust as needed */
+            border-style: solid;
+            border-width: 10px 0 10px 10px; /* Triangle dimensions, adjust as needed */
+            border-color: transparent transparent transparent grey; /* Adjust the color as needed */
         }
 h2 {
     color: #4caf50;
