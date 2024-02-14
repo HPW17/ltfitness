@@ -19,7 +19,26 @@ h1 {
     color: #4caf50;
 }
 
-/* Add styling for your form elements here */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
 
 button {
     background-color: #4caf50;
