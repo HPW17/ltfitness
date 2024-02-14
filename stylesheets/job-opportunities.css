@@ -26,7 +26,7 @@ h1 {
             /* Your job styles */
             position: relative;
             margin-bottom: 20px; /* Adjust as needed */
-            overflow: hidden; /* Ensures that the triangle won't overflow the container */
+            /* Ensures that the triangle won't overflow the container */
         }
         .job::before {
             content: "";
@@ -42,8 +42,10 @@ h1 {
         }
 .job-content {
             /* Your job content styles */
-            padding: 15px; /* Adjust as needed to avoid overlapping with the triangle */
-        
+            padding: 15px; /* Adjust as needed */
+            position: relative;
+            z-index: 2;
+            background-color: white; /* Ensure a white background to cover the triangle line */
         }
 h2 {
     color: #4caf50;
