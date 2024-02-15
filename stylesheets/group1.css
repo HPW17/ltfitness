@@ -76,10 +76,10 @@ nav a:hover {
 	display: block;
 }
 .selflink {
-	float: left;
+	/*float: left;
+	padding: 1rem;*/
 	color: #82d95c;
 	font-weight: bold;
-	padding: 1rem;
 }
 #banner_main {
 	position: relative;
@@ -208,11 +208,16 @@ nav a:hover {
 	display: flex;
 	justify-content: flex-start;
 	font-size: 0.8em;
+	overflow: hidden;
 }
 .reason-link {
 	color: white;
 	width: 100%;
 	text-decoration: none;
+	transition: transform 0.5s; 
+}
+.reason-link:hover {
+	transform: scale(1.1);
 }
 .reason-content {
 	display: flex;
@@ -238,7 +243,7 @@ nav a:hover {
 }
 .reason-text {
 	width: 50%;
-	padding: 0 30px;
+	padding: 0 60px;
 	box-sizing: border-box;
 }
 .reason-text p {
