@@ -283,6 +283,9 @@ footer {
 	padding: 20px;
 	margin-bottom: 50px;
 }
+.nowrap {
+	white-space: nowrap;
+}
 footer ul {
 	padding-left: 15px;
 	width: 100px;
@@ -313,4 +316,16 @@ footer a:hover {
 .social-icons img {
 	width: 20px;
 	height: 20px;
+}
+
+
+
+/* 
+	-------------------------------------------------------------------
+	Responsive style settings for larger screen	
+*/
+@media screen and (min-width: 768px) {
+
+
+
 }
