@@ -10,16 +10,16 @@
 }
 #store_banner_image {
 	width: 70%;
-	height: 400px;
+	height: 250px;
 	background-image: url("../images/banner_store.jpg");
 	background-size: cover;
 	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
 }
 #store_banner_text {
 	width: 30%;
-	padding: 0 20px 0 60px;
+	padding: 0 20px 0 20px;
 	box-sizing: border-box;
-	font-size: 20px;
+	font-size: 1.3em;
 	font-family: 'Montserrat', sans-serif;
 }
 #store_section_facilities, #section_explore_more {
@@ -27,7 +27,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 100px 0;
+	padding: 50px 0;
 }
 #fac1, #fac2, #fac3, #exp1, #exp2 {
 	width: 38vw;
@@ -61,6 +61,39 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	font-size: 20px;
+	font-size: 1.3em;
+	white-space: nowrap;
 	font-family: 'Montserrat', sans-serif;
+}
+
+
+/* 
+	-------------------------------------------------------------------
+	Responsive style settings for larger screens
+*/
+@media screen and (min-width: 680px) {
+
+	#store_banner_image {
+		width: 70%;
+		height: 400px;
+	}
+	#store_banner_text {
+		padding: 0 20px 0 60px;
+	}
+	#store_section_facilities, #section_explore_more {
+		padding: 75px 0;
+	}
+	#fac1, #fac2, #fac3, #exp1, #exp2 {
+		width: 32vw;
+	}
+}
+
+@media screen and (min-width: 900px) {
+
+	#store_section_facilities, #section_explore_more {
+		padding: 100px 0;
+	}
+	#fac1, #fac2, #fac3, #exp1, #exp2 {
+		width: 26vw;
+	}
 }
