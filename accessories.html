@@ -282,7 +282,7 @@
 			localStorage.setItem('cart', JSON.stringify(cart));
 			updateCartCount();
 			/*alert('Cart Contents: ' + JSON.stringify(cart));*/
-			alert(itemDesc + ' x ' + quantity + ' added to your cart.');
+			alert('Added to your cart:\n' + itemDesc + ' x ' + quantity);
 		}
 		function updateCartCount() {
 			let cart = JSON.parse(localStorage.getItem('cart')) || {};
@@ -296,8 +296,10 @@
 			window.location.href = 'cart.html';
 		}
 		function clearCart() {
-			localStorage.removeItem('cart');
-			updateCartCount();
+			if (confirm("Are you sure you want to clear the cart?")) {
+				localStorage.removeItem('cart');
+				updateCartCount();
+			}
 		}
 		updateCartCount(); // Update cart count on page load
 		document.getElementById('clear_cart_btn').addEventListener('click', clearCart);
