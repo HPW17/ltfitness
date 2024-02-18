@@ -412,3 +412,19 @@ footer a:hover {
 		margin: 100px auto;
 	}
 }
+
+#width1 {
+	background-color: green;
+	width: 420px;
+	display: none; /* toggle block/none */
+}
+#width2 {
+	background-color: red;
+	width: 680px;
+	display: none;;
+}
+#width3 {
+	background-color: blue;
+	width: 900px;
+	display: none;;
+}
