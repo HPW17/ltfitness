@@ -2,212 +2,423 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark">
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="./stylesheets/job-opportunities.css" rel="stylesheet"> <!-- should link to your own css -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/17168e035e.js" crossorigin="anonymous"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheets/job-opportunities.css">
     <title>Job Opportunities</title>
+<style>body {
+    font-family:  'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1eeee;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+.job-list {
+    margin-top: 20px;
+}
+
+.job {
+            /* Your job styles */
+            position: relative;
+            margin-bottom: 20px; /* Adjust as needed */
+            /* Ensures that the triangle won't overflow the container */
+            color: #000000;
+        }
+      
+.job-content {
+            /* Your job content styles */
+            padding: 15px; /* Adjust as needed */
+            position: relative;
+            z-index: 2;
+             border-radius: 20px;
+            outline-style: solid;
+            outline-width: thin;
+
+            background-color:rgb(240, 240, 240)
+        }
+h2 {
+    color: #82d95c;
+    position: relative;
+    z-index: 2;
+}
+
+.primary-description {
+    font-size: 15px;
+    color: #555;
+    text-align: center;
+}
+.application-contact {
+    margin-top: 30px;
+    color: #000000;
+}
+
+.application-contact ol {
+    padding-left: 20px;
+}
+
+.application-contact p {
+    margin-bottom: 10px;
+}
+
+.apply-now-button {
+    font-size: 1.1em;
+    background-color: #82d95c;
+    color: Black;
+    border: 1px solid #888;
+    padding: 5px 10px;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.7));
+        }</style>
+   
 </head>
 <body>
-
-    <div class="container">
-
-      
-        <h1>Job Opportunities</h1>
-
-          <p class="primary-description">
-            We're excited that you're considering a career with LT Fitness & Performance LLC. As we continue to grow, we're always on the lookout for passionate individuals who share our commitment to promoting a healthy and active lifestyle.
-            Explore the current openings below and discover the opportunities to become part of our dynamic team!
-        </p>
-
-        <div class="application-contact">
-            <h2>Application Process</h2>
-            <p>To apply for any of the positions listed, please follow these steps:</p>
-            <ol>
-                <li>Review the job descriptions below.</li>
-                <li>Prepare your resume and cover letter.</li>
-                <li>Click the job's Apply Now button to open the application form.</li>
-                <li>Complete the application form and submit your documents.</li>
-            </ol>
-
-            <h2>Contact Information</h2>
-            <p>If you have any questions or need further assistance, feel free to contact our HR department:</p>
-            <p>Email: hr@ltfitness.com</p>
-            <p>Phone: (123) 456-7890</p>
+    <header>
+        <h1>Apparel | LT Fitness & Performance LLC</h1>
+        <div>
+            <img src="images/logo.jpg" alt="LT logo">
         </div>
+        <nav>
+            <div id="mainNavBar">
+                <ul>
+                    <div class="dropdown h_navbar">
+                        <li><a href="index.html">Home</a></li>
+                    </div>
+                    <div class="dropdown h_navbar">
+                        <li><a href="kid.html">Kid Fitness</a></li>
+                        <div class="dropdown-menu">
+                            <a href="kidprograms.html">Programs</a>
+                            <a href="nutrition.html">Nutrition Guide</a>
+                        </div>
+                    </div>
+                    <div class="dropdown h_navbar">
+                        <li><a href="adult.html">Adult Fitness</a></li>
+                        <div class="dropdown-menu">
+                            <a href="adultprograms.html">Programs</a>
+                            <a href="membership.html">Membership</a>
+                        </div>
+                    </div>
+                    <div class="dropdown h_navbar">
+                        <li><a href="store.html">Store</a></li>
+                        <div class="dropdown-menu">
+                            <a href="apparel.html">Apparel</a>
+                            <a href="equipment.html">Equipment</a>
+                            <a href="accessories.html">Accessories</a>
+                        </div>
+                    </div>
+                    <div class="dropdown h_navbar">
+                        <li><a href="engagement.html">Engagement</a></li>
+                        <div class="dropdown-menu">
+                            <a href="donate.html">Donate</a>
+                            <a href="volunteer.html">Volunteer</a>
+                            <a href="partnerships.html">Partnerships</a>
+                        </div>
+                    </div>
+                    <div class="dropdown h_navbar">
+                        <li><a href="about.html">About Us</a></li>
+                        <div class="dropdown-menu">
+                            <a href="story.html">Our Story</a>
+                            <a href="staff.html">Meet Staff</a>
+                            <a href="facilities.html">Facilities</a>
+                        </div>
+                    </div>
+                    <div class="dropdown h_navbar">
+                        <li><a href="contact.html" class="selflink">Contact Us</a></li>
+                        <div class="dropdown-menu">
+                            <a href="contact-form.html">Contact Form</a>
+                            <a href="job-opportunities.html">Job Opportunities</a>
+                        </div>
+                    </div>
+                    <div class="dropdown hamburger aright">
+                        <li><a href="#" id="hamlogo"><i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></a></li>
+                        <div class="dropdown-menu">
+                            <a href="index.html" class="major">Home</a>
+                            <a href="kid.html" class="major">Kid Fitness</a>
+                            <a href="kid_programs.html">Programs</a>
+                            <a href="nutrition.html">Nutrition Guide</a>
+                            <a href="adult.html" class="major">Adult Fitness</a>
+                            <a href="adult_programs.html">Programs</a>
+                            <a href="membership.html">Membership</a>
+                            <a href="store.html" class="major">Store</a>
+                            <a href="apparel.html">Apparel</a>
+                            <a href="equipment.html">Equipment</a>
+                            <a href="accessories.html">Accessories</a>
+                            <a href="engagement.html" class="major">Engagement</a>
+                            <a href="donate.html">Donate</a>
+                            <a href="volunteer.html">Volunteer</a>
+                            <a href="partnerships.html">Partnerships</a>
+                            <a href="about.html" class="major">About Us</a>
+                            <a href="story.html">Our Story</a>
+                            <a href="staff.html">Meet Staff</a>
+                            <a href="facilities.html">Facilities</a>
+                            <a href="contact.html" class="major">Contact Us</a>
+                            <a href="contact-form.html">Contact Form</a>
+                            <a href="job-opportunities.html">Job Opportunities</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        <div class="job-list">
-            <div class="job">
-                <div class="job-content">
-                    <h2>Fitness Trainer</h2>
-                    <p>Description: Design and implement personalized fitness programs, conduct training sessions, and motivate clients to achieve their fitness goals.</p>
+        <div class="container">
+    
+          
+            <h1>Job Opportunities</h1>
+    
+              <p class="primary-description">
+                We're excited that you're considering a career with LT Fitness & Performance LLC. As we continue to grow, we're always on the lookout for passionate individuals who share our commitment to promoting a healthy and active lifestyle.
+                Explore the current openings below and discover the opportunities to become part of our dynamic team!
+            </p>
+    
+            <div class="application-contact">
+                <h2>Application Process</h2>
+                <p>To apply for any of the positions listed, please follow these steps:</p>
+                <ol>
+                    <li>Review the job descriptions below.</li>
+                    <li>Prepare your resume and cover letter.</li>
+                    <li>Click the job's Apply Now button to open the application form.</li>
+                    <li>Complete the application form and submit your documents.</li>
+                </ol>
+    
+                <h2>Contact Information</h2>
+                <p>If you have any questions or need further assistance, feel free to contact our HR department:</p>
+                <p>Email: hr@ltfitness.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+    
+            <div class="job-list">
+                <div class="job">
+                    <div class="job-content">
+                        <h2>Fitness Trainer</h2>
+                        <p>Description: Design and implement personalized fitness programs, conduct training sessions, and motivate clients to achieve their fitness goals.</p>
+                        <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
+                    </div>
+                </div>
+    
+                <div class="job">
+                    <div class="job-content">
+                    <h2>Nutrition Specialist</h2>
+                    <p>Description: Provide nutrition counseling, create customized meal plans, and educate clients on the importance of a balanced diet for optimal health and fitness.</p>
                     <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
+        
                 </div>
-            </div>
-
-            <div class="job">
-                <div class="job-content">
-                <h2>Nutrition Specialist</h2>
-                <p>Description: Provide nutrition counseling, create customized meal plans, and educate clients on the importance of a balanced diet for optimal health and fitness.</p>
-                <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
-    
-            </div>
-            </div>
-
-
-            <div class="job">
-                <div class="job-content">
-                <h2>Front Desk Coordinator</h2>
-                <p>Description: Manage front desk operations, greet members, handle inquiries, and ensure a positive customer experience at the fitness facility.</p>
-                <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
-    
-            </div>
-            </div>
-
-            <div class="job">
-                <div class="job-content">
-                <h2>Group Fitness Instructor</h2>
-                <p>Description: Lead energetic group fitness classes, design workout routines, and create a motivating environment for participants.</p>
-                <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
-    
-            </div>
-            </div>
-
-            <div class="job">
-                <div class="job-content">
-                <h2>Marketing Coordinator</h2>
-                <p>Description: Develop and implement marketing strategies, manage social media presence, and collaborate with the team to promote fitness programs and events.</p>
-                <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
-    
-            </div>
-            </div>
-
-            <div class="job">
-                <div class="job-content">
-                <h2>Personal Wellness Coach</h2>
-                <p>Description: Provide one-on-one coaching, support clients in setting and achieving wellness goals, and address both physical and mental aspects of health.</p>
-                <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
-    
-            </div>
-            </div>
-
-            <div class="job">
-                <div class="job-content">
-                <h2>Maintenance Technician</h2>
-                <p>Description: Ensure proper maintenance of fitness equipment, facilities, and infrastructure to create a safe and clean environment for members.</p>
-                <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
-    
-            </div>
-            </div>
-
-            <div class="job">
-                <div class="job-content">
-                <h2>Health and Safety Officer</h2>
-                <p>Description: Implement health and safety protocols, conduct regular inspections, and educate staff and members on maintaining a secure fitness environment.</p>
-                <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
-    
-            </div>
-            </div>
-
-            <div class="job">
-                <div class="job-content">
-                <h2>Membership Sales Representative</h2>
-                <p>Description: Drive membership sales, conduct tours for potential clients, and assist in developing promotional strategies to attract new members.</p>
-                <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
-    
-            </div>
-            </div>
-
-            <div class="job">
-                <div class="job-content">
-                <h2>Event Coordinator</h2>
-                <p>Description: Plan and execute fitness events, workshops, and challenges, coordinating logistics and ensuring a seamless experience for participants.</p>
-                <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
-    
-            </div>
-            </div>
-            <div class="job">
-                <div class="job-content">
-    <h2>Physical Therapist</h2>
-    <p>Description: Provide rehabilitative services to individuals recovering from injuries or surgeries, design personalized exercise programs, and collaborate with medical professionals for holistic care.</p>
-    <a href="physical_therapist_application_form.html" class="apply-now-button">Apply Now</a>
                 </div>
-</div>
-
-<div class="job">
-    <div class="job-content">
-    <h2>Yoga Instructor</h2>
-    <p>Description: Lead yoga classes, guide participants in various yoga practices, and promote holistic well-being through meditation and mindfulness techniques.</p>
-    <a href="yoga_instructor_application_form.html" class="apply-now-button">Apply Now</a>
+    
+    
+                <div class="job">
+                    <div class="job-content">
+                    <h2>Front Desk Coordinator</h2>
+                    <p>Description: Manage front desk operations, greet members, handle inquiries, and ensure a positive customer experience at the fitness facility.</p>
+                    <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
+        
+                </div>
+                </div>
+    
+                <div class="job">
+                    <div class="job-content">
+                    <h2>Group Fitness Instructor</h2>
+                    <p>Description: Lead energetic group fitness classes, design workout routines, and create a motivating environment for participants.</p>
+                    <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
+        
+                </div>
+                </div>
+    
+                <div class="job">
+                    <div class="job-content">
+                    <h2>Marketing Coordinator</h2>
+                    <p>Description: Develop and implement marketing strategies, manage social media presence, and collaborate with the team to promote fitness programs and events.</p>
+                    <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
+        
+                </div>
+                </div>
+    
+                <div class="job">
+                    <div class="job-content">
+                    <h2>Personal Wellness Coach</h2>
+                    <p>Description: Provide one-on-one coaching, support clients in setting and achieving wellness goals, and address both physical and mental aspects of health.</p>
+                    <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
+        
+                </div>
+                </div>
+    
+                <div class="job">
+                    <div class="job-content">
+                    <h2>Maintenance Technician</h2>
+                    <p>Description: Ensure proper maintenance of fitness equipment, facilities, and infrastructure to create a safe and clean environment for members.</p>
+                    <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
+        
+                </div>
+                </div>
+    
+                <div class="job">
+                    <div class="job-content">
+                    <h2>Health and Safety Officer</h2>
+                    <p>Description: Implement health and safety protocols, conduct regular inspections, and educate staff and members on maintaining a secure fitness environment.</p>
+                    <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
+        
+                </div>
+                </div>
+    
+                <div class="job">
+                    <div class="job-content">
+                    <h2>Membership Sales Representative</h2>
+                    <p>Description: Drive membership sales, conduct tours for potential clients, and assist in developing promotional strategies to attract new members.</p>
+                    <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
+        
+                </div>
+                </div>
+    
+                <div class="job">
+                    <div class="job-content">
+                    <h2>Event Coordinator</h2>
+                    <p>Description: Plan and execute fitness events, workshops, and challenges, coordinating logistics and ensuring a seamless experience for participants.</p>
+                    <a href="fitness_trainer_application_form.html" class="apply-now-button">Apply Now</a>
+        
+                </div>
+                </div>
+                <div class="job">
+                    <div class="job-content">
+        <h2>Physical Therapist</h2>
+        <p>Description: Provide rehabilitative services to individuals recovering from injuries or surgeries, design personalized exercise programs, and collaborate with medical professionals for holistic care.</p>
+        <a href="physical_therapist_application_form.html" class="apply-now-button">Apply Now</a>
+                    </div>
     </div>
-</div>
-
-<div class="job">
-    <div class="job-content">
-    <h2>IT Specialist</h2>
-    <p>Description: Manage and maintain IT infrastructure, troubleshoot technical issues, and implement technology solutions to enhance efficiency across the organization.</p>
-    <a href="it_specialist_application_form.html" class="apply-now-button">Apply Now</a>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-content">
-    <h2>Customer Service Representative</h2>
-    <p>Description: Interact with members, address inquiries, and ensure a positive customer experience, contributing to the overall satisfaction of our fitness community.</p>
-    <a href="customer_service_rep_application_form.html" class="apply-now-button">Apply Now</a>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-content">
-    <h2>Certified Personal Trainer</h2>
-    <p>Description: Conduct individualized fitness assessments, create tailored workout plans, and motivate clients to achieve their fitness objectives.</p>
-    <a href="certified_personal_trainer_application_form.html" class="apply-now-button">Apply Now</a>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-content">
-    <h2>Wellness Program Coordinator</h2>
-    <p>Description: Develop and oversee wellness programs, organize health-related events, and promote a culture of well-being within the LT Fitness community.</p>
-    <a href="wellness_program_coordinator_application_form.html" class="apply-now-button">Apply Now</a>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-content">
-    <h2>Financial Analyst</h2>
-    <p>Description: Analyze financial data, create reports, and provide insights to support decision-making processes within the organization.</p>
-    <a href="financial_analyst_application_form.html" class="apply-now-button">Apply Now</a>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-content">
-    <h2>Group Exercise Coordinator</h2>
-    <p>Description: Coordinate group exercise programs, schedule classes, and ensure a diverse range of fitness activities to cater to members' preferences.</p>
-    <a href="group_exercise_coordinator_application_form.html" class="apply-now-button">Apply Now</a>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-content">
-    <h2>Facility Manager</h2>
-    <p>Description: Oversee day-to-day operations of fitness facilities, manage staff, and ensure a clean, safe, and welcoming environment for members.</p>
-    <a href="facility_manager_application_form.html" class="apply-now-button">Apply Now</a>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-content">
-    <h2>Human Resources Specialist</h2>
-    <p>Description: Handle HR functions, including recruitment, onboarding, and employee relations, to support the growth and well-being of the LT Fitness team.</p>
-    <a href="hr_specialist_application_form.html" class="apply-now-button">Apply Now</a>
-    </div>
-</div>
+    
+    <div class="job">
+        <div class="job-content">
+        <h2>Yoga Instructor</h2>
+        <p>Description: Lead yoga classes, guide participants in various yoga practices, and promote holistic well-being through meditation and mindfulness techniques.</p>
+        <a href="yoga_instructor_application_form.html" class="apply-now-button">Apply Now</a>
         </div>
-
-      
-      
     </div>
-
+    
+    <div class="job">
+        <div class="job-content">
+        <h2>IT Specialist</h2>
+        <p>Description: Manage and maintain IT infrastructure, troubleshoot technical issues, and implement technology solutions to enhance efficiency across the organization.</p>
+        <a href="it_specialist_application_form.html" class="apply-now-button">Apply Now</a>
+        </div>
+    </div>
+    
+    <div class="job">
+        <div class="job-content">
+        <h2>Customer Service Representative</h2>
+        <p>Description: Interact with members, address inquiries, and ensure a positive customer experience, contributing to the overall satisfaction of our fitness community.</p>
+        <a href="customer_service_rep_application_form.html" class="apply-now-button">Apply Now</a>
+        </div>
+    </div>
+    
+    <div class="job">
+        <div class="job-content">
+        <h2>Certified Personal Trainer</h2>
+        <p>Description: Conduct individualized fitness assessments, create tailored workout plans, and motivate clients to achieve their fitness objectives.</p>
+        <a href="certified_personal_trainer_application_form.html" class="apply-now-button">Apply Now</a>
+        </div>
+    </div>
+    
+    <div class="job">
+        <div class="job-content">
+        <h2>Wellness Program Coordinator</h2>
+        <p>Description: Develop and oversee wellness programs, organize health-related events, and promote a culture of well-being within the LT Fitness community.</p>
+        <a href="wellness_program_coordinator_application_form.html" class="apply-now-button">Apply Now</a>
+        </div>
+    </div>
+    
+    <div class="job">
+        <div class="job-content">
+        <h2>Financial Analyst</h2>
+        <p>Description: Analyze financial data, create reports, and provide insights to support decision-making processes within the organization.</p>
+        <a href="financial_analyst_application_form.html" class="apply-now-button">Apply Now</a>
+        </div>
+    </div>
+    
+    <div class="job">
+        <div class="job-content">
+        <h2>Group Exercise Coordinator</h2>
+        <p>Description: Coordinate group exercise programs, schedule classes, and ensure a diverse range of fitness activities to cater to members' preferences.</p>
+        <a href="group_exercise_coordinator_application_form.html" class="apply-now-button">Apply Now</a>
+        </div>
+    </div>
+    
+    <div class="job">
+        <div class="job-content">
+        <h2>Facility Manager</h2>
+        <p>Description: Oversee day-to-day operations of fitness facilities, manage staff, and ensure a clean, safe, and welcoming environment for members.</p>
+        <a href="facility_manager_application_form.html" class="apply-now-button">Apply Now</a>
+        </div>
+    </div>
+    
+    <div class="job">
+        <div class="job-content">
+        <h2>Human Resources Specialist</h2>
+        <p>Description: Handle HR functions, including recruitment, onboarding, and employee relations, to support the growth and well-being of the LT Fitness team.</p>
+        <a href="hr_specialist_application_form.html" class="apply-now-button">Apply Now</a>
+        </div>
+    </div>
+            </div>
+    
+          
+          
+        </div>
+       
+    <footer>
+        <div class="footer-column" id="slogan">
+            <img src="images/logo.jpg" alt="LT logo">
+            <p>We believe in promoting a healthy lifestyle for all ages.</p>
+        </div>
+        <div class="footer-column nowrap" id="footer_nav">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kid.html">Kid Fitness</a></li>
+                <li><a href="adult.html">Adult Fitness</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="engagement.html">Engagement</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column nowrap">
+            <h3>Working Hours</h3>
+            <p>Monday - Friday:<br>07:00 - 21:00</p>
+            <p>Saturday:<br>07:00 - 16:00</p>
+            <p>Sunday Closed</p>
+        </div>
+        <div class="footer-column nowrap">
+            <h3>Contact Us</h3>
+            <p><i class="fa-solid fa-phone" style="color: #82d95c;"></i>
+            &nbsp;&nbsp;<a href="tel:+19848877777">+1 984 887 7777</a></p>
+            <p><i class="fa-solid fa-envelope" style="color: #82d95c;"></i>
+            &nbsp;&nbsp;<a href="mailto:info@ltfitness.com">info@ltfitness.com</a></p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+                <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
