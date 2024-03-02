@@ -1,4 +1,10 @@
 @charset "utf-8";
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+color: #82d95c; or rgb(130,217,92);
+background-color: #353535;
+*/
 
 #store_banner_container {
 	background-color: Black;
@@ -22,49 +28,65 @@
 	font-size: 1.3em;
 	font-family: 'Montserrat', sans-serif;
 }
-#store_section_facilities, #section_explore_more {
-	background-color: White;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: 50px 0;
+.store_ad {
+	background-color: white;
+	padding: 60px 0;
 }
-#fac1, #fac2, #fac3, #exp1, #exp2 {
-	width: 38vw;
+.store_ad_container {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr); 
+	grid-gap: 30px;
+	align-items: center;
+	background-color: white;
+	width: 70%;
+	margin: 0 auto;
+	align-items: stretch;
 }
-#treadmills_box {
-	margin-top: 20px;
+.store_ad_item {
+	background-color: #eee;
+	border: 1px solid #bbb;
+	filter: drop-shadow(0 0 0.8rem rgba(0, 0, 0, 0.5));
 }
-#store_fac_left {
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	overflow: hidden;
-}
-#store_fac_right {
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	overflow: hidden;
-	margin-left: 20px;
-}
-#explore_main {
-	position: relative;
-}
-#explore_main img {
+.store_ad_item img {
 	width: 100%;
 	height: auto;
 }
-#explore_text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	font-size: 1.3em;
-	white-space: nowrap;
-	font-family: 'Montserrat', sans-serif;
+.store_ad_text {
+	padding: 10px 10px 30px 10px;
+	color: black;
 }
+.store_ad_text h3 {
+	color: #82d95c;
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 10px;
+}
+.store_ad_text p {
+	margin: 0 10px 10px 10px;
+	padding: 0;
+}
+#store_gift_card {
+	background-color: black;
+	padding: 50px 0 50px 20px;
+}
+#store_gift_card_container {
+	width: 70%;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr); 
+	align-items: center;
+	margin: 0 auto;
+}
+#store_gift_card_container h2 {
+	white-space: nowrap;
+	margin: 0;
+}
+#store_gift_card_img {
+	margin: 30px;
+}
+#store_gift_card_img img {
+	width: 100%;
+	height: auto;
+}
+
 /* equipment.html */
 #equip_banner, #apparel_banner, #accessories_banner {
 	position: relative;
@@ -379,11 +401,11 @@
 	#store_banner_text {
 		padding: 0 20px 0 60px;
 	}
-	#store_section_facilities, #section_explore_more {
-		padding: 75px 0;
+	.store_ad_container {
+		grid-template-columns: repeat(2, 1fr); 
 	}
-	#fac1, #fac2, #fac3, #exp1, #exp2 {
-		width: 32vw;
+	#store_gift_card_container {
+		grid-template-columns: 1fr minmax(300px, 1fr); 
 	}
 	.shopping_container {
 		width: 80%;
@@ -402,12 +424,6 @@
 
 @media screen and (min-width: 900px) {
 
-	#store_section_facilities, #section_explore_more {
-		padding: 100px 0;
-	}
-	#fac1, #fac2, #fac3, #exp1, #exp2 {
-		width: 26vw;
-	}
 	.shopping_container {
 		width: 70%;
 		margin: -50px auto 0 auto;
