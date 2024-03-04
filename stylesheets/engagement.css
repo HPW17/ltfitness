@@ -24,6 +24,10 @@ header img {
 	height: auto;
 }
 
+label {
+	color: black;
+
+}
 .dropdown-menu {
 	display: none;
 	position: absolute;
@@ -84,6 +88,15 @@ header img {
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+}
+.engagement-section button {
+	display: inline-block;
+	padding: 10px;
+	background-color: #82d95c;
+	color: white;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
 }
 
 .engagement-section a:hover {
