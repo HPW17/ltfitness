@@ -109,13 +109,96 @@
 		</header>
 
 		<section id="section_hero">
-			<div id="banner_main">
+			<!--div id="banner_main">
 				<img src="images/banner_main.jpg" alt="Main Banner">
 				<div class="text_main">
 					<div class="lttitle1 ltgreen">Inspiration</div>
 					<div>for Joyful Living!</div>
 				</div>
+			</div-->
+			<div id="slideshow-container">
+				<div class="ftslides fade">
+					<div class="slider_number">1 / 4</div>
+					<a href="story.html">
+						<img src="images/banner_slider1.jpg">
+						<div class="slider_text">
+							<div class="lttitle1"><span class="ltgreen">Inspiration</span> for&nbsp;<wbr>Joyful&nbsp;Living!</div><p>Level up your fitness journey with LT fitness and achieve your goals faster, surrounded by a supportive community and expert coaching.</p>
+						</div>
+					</a>
+				</div>
+				<div class="ftslides fade">
+					<div class="slider_number">2 / 4</div>
+					<a href="volunteer.html">
+						<img src="images/banner_slider2.jpg">
+						<div class="slider_text">
+							<div class="lttitle1"><span class="ltgreen">Community</span> Connection</div><p>We understand the strength that comes from community support. Join us to coneect with like-minded individuals, share your fitness achievements, and inspire others on their path to a healthier lifestyle.</p>
+						</div>
+					</a>
+				</div>
+				<div class="ftslides fade">
+					<div class="slider_number">3 / 4</div>
+					<a href="nutrition.html">
+						<img src="images/banner_slider3.jpg">
+						<div class="slider_text">
+							<div class="lttitle1"><span class="ltgreen">Nutrition</span> Services</div><p>Understand the importance of nutrition for kids. Our Nutrition Promise outlines our commitment to empowering kids with the knowledge to make healthy food choices that last a lifetime.</p>
+						</div>
+					</a>
+				</div>
+				<div class="ftslides fade">
+					<div class="slider_number">4 / 4</div>
+					<a href="apparel.html">
+						<img src="images/banner_slider4.jpg">
+						<div class="slider_text">
+							<div class="lttitle1"><span class="ltgreen">Empowering</span> Apparel</div><p>Gear up with our empowering apparel and wear your commitment to a healthier lifestyle. Every purchase supports our community-driven mission, making fitness accessible for all!</p>
+						</div>
+					</a>
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div id="slideshow_dots">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
 			</div>
+
+			<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			function autoSlide() {
+				plusSlides(1);
+			}
+			let slideInterval = setInterval(autoSlide, 5000);
+
+			function plusSlides(n) {
+				clearInterval(slideInterval);
+				slideInterval = setInterval(autoSlide, 5000);
+				showSlides(slideIndex += n);
+			}
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("ftslides");
+				let dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {
+					slideIndex = 1;
+				}    
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+			}
+			</script>
+
 			<div id="banner_sub">
 				<a href="kid.html" class="banner-link">
 					<div class="banner">
@@ -147,45 +230,54 @@
 		<section id="section_about">
 			<div>
 				<h2>WHAT IS <span class="ltgreen">LT FITNESS</span><br>ALL ABOUT</h2>
-				<p>LT fitness, where we believe in promoting a healthy lifestyle for all ages. Our home page is a gateway to explore the various fitness programs and initiative we offer. From kids to adults, we're committed to empowering individuals to achieve their fitness goals while fostering a sense of community and well-being.</p>
+				<p>LT Fitness is a Boston-based organization founded in 2015 as Latoya Jones saw the need in her community for more health and wellness programs. With a dream of building an inclusive and accessible wellness organization, she enlisted the help of friends and family to help create her vision. Fast forward almost 10 years and LT Fitness has grown into a multi-tiered organization with programs for kids and adults. And... they're just getting started.</p><br><br>
+				<a href="story.html" class="newbutton">Learn More &raquo;</a>
 			</div>
 		</section>
 
-		<section id="section_box">
+		<section id="section_box1">
 			<a href="adultprograms.html?p=1" class="box-link">
 				<div class="box_background">
-					<img src="images/box1.jpg" alt="Box1" class="box-image" id="box1">
-					<div class="box_title"><span class="lttitle2">Start </span><span class="lttitle1 ltgreen">Workout</span><br>Program 1</div>
+					<img src="images/box1.jpg" alt="Dance Classes" class="box-image">
+					<div class="box_title"><div class="box_desc"><span class="lttitle1 ltgreen">Dance</span><span class="lttitle2"> Classes</span></div><p>Our dance classes offer a fun and supportive space to learn new moves, express yourself, and build confidence.</p></div>
+					<div class="box_title_fix"><span class="lttitle1 ltgreen">Dance</span><span class="lttitle2"> Classes</span></div>
 				</div>
 			</a>
 			<a href="adultprograms.html?p=2" class="box-link">
 				<div class="box_background">
-					<img src="images/box2.jpg" alt="Box2" class="box-image" id="box2">
-					<div class="box_title"><span class="lttitle2">Start </span><span class="lttitle1 ltgreen">Workout</span><br>Program 2</div>
+					<img src="images/box2.jpg" alt="Boot Camp" class="box-image">
+					<div class="box_title"><div class="box_desc"><span class="lttitle1 ltgreen">Boot</span><span class="lttitle2"> Camp</span></div><p>Our boot camp classes combine high-intensity cardio and strength training for a full-body workout.</p></div>
+					<div class="box_title_fix"><span class="lttitle1 ltgreen">Boot</span><span class="lttitle2"> Camp</span></div>
 				</div>
 			</a>
 			<a href="adultprograms.html?p=3" class="box-link">
 				<div class="box_background">
-					<img src="images/box3.jpg" alt="Box3" class="box-image" id="box3">
-					<div class="box_title"><span class="lttitle2">Start </span><span class="lttitle1 ltgreen">Workout</span><br>Program 3</div>
+					<img src="images/box3.jpg" alt="Sports Conditioning" class="box-image">
+					<div class="box_title"><div class="box_desc"><span class="lttitle1 ltgreen">Sports</span><span class="lttitle2"> Conditioning</span></div><p>Ignite your potential with our sports conditioning classes! Push your limit with dynamic drills.</p></div>
+					<div class="box_title_fix"><span class="lttitle1 ltgreen">Sports</span><span class="lttitle2"> Conditioning</span></div>
 				</div>
 			</a>
+		</section>
+		<section id="section_box2">
 			<a href="adultprograms.html?p=4" class="box-link">
 				<div class="box_background">
-					<img src="images/box4.jpg" alt="Box4" class="box-image" id="box4">
-					<div class="box_title"><span class="lttitle2">Start </span><span class="lttitle1 ltgreen">Workout</span><br>Program 4</div>
+					<img src="images/box4.jpg" alt="Yoga Classes" class="box-image">
+					<div class="box_title"><div class="box_desc"><span class="lttitle1 ltgreen">Yoga</span><span class="lttitle2"> Classes</span></div><p>Yoga classes helps to improve your strength, balance and flexibility.</p></div>
+					<div class="box_title_fix"><span class="lttitle1 ltgreen">Yoga</span><span class="lttitle2"> Classes</span></div>
 				</div>
 			</a>
 			<a href="adultprograms.html?p=5" class="box-link">
 				<div class="box_background">
-					<img src="images/box5.jpg" alt="Box5" class="box-image" id="box5">
-					<div class="box_title"><span class="lttitle2">Start </span><span class="lttitle1 ltgreen">Workout</span><br>Program 5</div>
+					<img src="images/box5.jpg" alt="Nutrition Services" class="box-image">
+					<div class="box_title"><div class="box_desc"><span class="lttitle1 ltgreen">Nutrition</span><span class="lttitle2"> Services</span></div><p>Understand the importance of nutrition for your fitness. Explore our nutrition goals for fitness.</p></div>
+					<div class="box_title_fix"><span class="lttitle1 ltgreen">Nutrition</span><span class="lttitle2"> Services</span></div>
 				</div>
 			</a>
 			<a href="adultprograms.html?p=6" class="box-link">
 				<div class="box_background">
-					<img src="images/box6.jpg" alt="Box6" class="box-image" id="box6">
-					<div class="box_title"><span class="lttitle2">Start </span><span class="lttitle1 ltgreen">Workout</span><br>Program 6</div>
+					<img src="images/box6.jpg" alt="" class="box-image">
+					<div class="box_title"><div class="box_desc"><span class="lttitle1 ltgreen">Zumba</span><span class="lttitle2"> Classes</span></div><p>Our zumba classes offer a fun and supportive space to learn new moves, express yourself, and build confidence.</p></div>
+					<div class="box_title_fix"><span class="lttitle1 ltgreen">Zumba</span><span class="lttitle2"> Classes</span></div>
 				</div>
 			</a>
 		</section>
@@ -205,7 +297,7 @@
 							</div>
 							<p>Our methods combine the best of personal training with performance-based workouts that deliver you the best
 							ultimate fitness solution.</p>
-							<div>Start Now <span class="ltgreen">&raquo;</span></div>
+							<p>Start Now <span class="ltgreen">&raquo;</span></p>
 						</div>
 					</div>
 				</a>
@@ -220,7 +312,7 @@
 							</div>
 							<p>We will create a plan that is tailored to your situation and create your nutrition strategies. Functional
 							training protocol will take you to the next level.</p>
-							<div>Start Now <span class="ltgreen">&raquo;</span></div>
+							<p>Start Now <span class="ltgreen">&raquo;</span></p>
 						</div>
 						<div id="reason-image2"></div>
 					</div>
