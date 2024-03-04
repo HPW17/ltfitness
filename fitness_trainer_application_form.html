@@ -164,8 +164,7 @@ button:hover{
     <div class="form-container">
         <h1>Fitness Trainer Application Form</h1>
 
-        <form action="submit_application.php" method="post">
-
+        <form action="submit_application.php" method="post" onsubmit="return submitForm()">
             <label for="full-name">Full Name:</label>
             <input type="text" id="full-name" name="full-name" required>
 
@@ -194,6 +193,8 @@ button:hover{
 
         </form>
     </div>
+
+
     <footer>
         <div class="footer-column" id="slogan">
             <img src="images/logo.jpg" alt="LT logo">
@@ -231,5 +232,32 @@ button:hover{
             </div>
         </div>
     </footer>
+
+
+    <script>
+   
+   function submitForm() {
+            // Check if all required fields are filled
+            var fullName = document.getElementById("full-name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var experience = document.getElementById("experience").value;
+            var certifications = document.getElementById("certifications").value;
+            var availability = document.getElementById("availability").value;
+            var resume = document.getElementById("resume").value;
+
+            if (fullName && email && phone && experience && certifications && availability && resume) {
+                // All fields are filled, show thank you message
+                alert('Thank you for considering LT Fitness! Your application has been submitted.');
+                // You can replace the alert with actual submission logic
+                return true; // Form will be submitted
+            } else {
+                // Some fields are empty, display an error message or take appropriate action
+                alert('Please fill in all required fields before submitting.');
+                return false; // Form will not be submitted
+            }
+        }
+</script>
+    
 </body>
 </html>
