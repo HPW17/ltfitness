@@ -132,99 +132,144 @@
         </div>
       </div>
     </div>
-    <div class="membership">MEMBERSHIP OPTIONS</div>
-    <div class="cart-wrap">
-      <div class="membership-cart">
-        <div class="cart">
-          <img
-            src="images/adult_fitness/adultfitnessmockup11.png"
-            alt="img"
-          />
-          <div class="cart-detail">
-            <h2>Monthly Membership</h2>
-            <p>
-              Our monthly membership package gives you all access to LT programs
-              and services, with flexibility to decide as you go.
-            </p>
-            <div>
-              <span>$49<sup>99</sup></span>
-              <select>
-                <option value="1">1</option>
-                <option value="2">2</option>
-              </select>
-              <button>+ Add to Cart</button>
-            </div>
-          </div>
-        </div>
-        <div class="cart">
-          <img
-            src="images/adult_fitness/adultfitnessmockup12.png"
-            alt="img"
-          />
-          <div class="cart-detail">
-            <h2>Annual Membership</h2>
-            <p>
-              Our annual membership offers the best rate and ensures you stay
-              committed to your goals all year long!
-            </p>
-            <div>
-              <span>$499<sup>99</sup></span>
-              <select>
-                <option value="1">1</option>
-                <option value="2">2</option>
-              </select>
-              <button>+ Add to Cart</button>
-            </div>
-          </div>
-        </div>
-        <div class="cart">
-          <img
-            src="images/adult_fitness/adultfitnessmockup13.png"
-            alt="img"
-          />
-          <div class="cart-detail">
-            <h2>Class Package 1</h2>
-            <p>
-              Our first class package gives you access to any five classes. You
-              can try out classes and see what you like!
-            </p>
-            <div>
-              <span>$29<sup>99</sup></span>
-              <select>
-                <option value="1">1</option>
-                <option value="2">2</option>
-              </select>
-              <button>+ Add to Cart</button>
-            </div>
-          </div>
-        </div>
-        <div class="cart">
-          <img
-            src="images/adult_fitness/adultfitnessmockup14.png"
-            alt="img"
-          />
-          <div class="cart-detail">
-            <h2>Class Package 2</h2>
-            <p>
-              Our next class package gives you access to any 10 classes. Dip
-              your toes in all that LT has to offer!
-            </p>
-            <div>
-              <span>$49<sup>99</sup></span>
-              <select>
-                <option value="1">1</option>
-                <option value="2">2</option>
-              </select>
-              <button>+ Add to Cart</button>
-            </div>
-          </div>
-        </div>
-        <div class="cart-info">
-          Send us an email or contact us with any <br />
-          questions or inquiries about membership.
-        </div>
-      </div>
-    </div>
+
+	<div class="membership1">MEMBERSHIP OPTIONS</div>
+		<div id="shopping_background">
+		<section class="shopping_container">
+			<div class="item_row">
+				<img src="images/adult_fitness/adultfitnessmockup11.png" alt="img" class="item_image" />
+				<div class="item_content">
+					<div class="item_description">
+						<h3>Monthly Membership</h3>
+						<p>Our monthly membership package gives you all access to LT programs and services, with flexibility to decide as you go.</p>
+					</div>
+					<div class="item_price">
+						$49<sup>99</sup>
+					</div>
+					<div class="item_quantity">
+						<select name="memb1" id="memb1">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+					</div>
+					<div class="add_to_cart">
+						<button onclick="addToCart('memb1', 'Monthly Membership', 49.99)">&plus;&nbsp;Add to Cart</button>
+					</div>
+				</div> 
+			</div>
+			<div class="item_row">
+				<img src="images/adult_fitness/adultfitnessmockup12.png" alt="img" class="item_image" />
+				<div class="item_content">
+					<div class="item_description">
+						<h3>Annual Membership</h3>
+						<p>Our annual membership offers the best rate and ensures you stay committed to your goals all year long!</p>
+					</div>
+					<div class="item_price">
+						$499<sup>99</sup>
+					</div>
+					<div class="item_quantity">
+						<select name="memb2" id="memb2">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+					</div>
+					<div class="add_to_cart">
+						<button onclick="addToCart('memb2', 'Annual Membership', 499.99)">&plus;&nbsp;Add to Cart</button>
+					</div>
+				</div> 
+			</div>
+			<div class="item_row">
+				<img src="images/adult_fitness/adultfitnessmockup13.png" alt="img" class="item_image" />
+				<div class="item_content">
+					<div class="item_description">
+						<h3>Class Package 1</h3>
+						<p>Our first class package gives you access to any five classes. You can try out classes and see what you like!</p>
+					</div>
+					<div class="item_price">
+						$29<sup>99</sup>
+					</div>
+					<div class="item_quantity">
+						<select name="memb3" id="memb3">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+					</div>
+					<div class="add_to_cart">
+						<button onclick="addToCart('memb3', 'Class Package 1', 29.99)">&plus;&nbsp;Add to Cart</button>
+					</div>
+				</div> 
+			</div>
+			<div class="item_row">
+				<img src="images/adult_fitness/adultfitnessmockup14.png" alt="img" class="item_image" />
+				<div class="item_content">
+					<div class="item_description">
+						<h3>Class Package 2</h3>
+						<p>Our next class package gives you access to any 10 classes. Dip your toes in all that LT has to offer!</p>
+					</div>
+					<div class="item_price">
+						$49<sup>99</sup>
+					</div>
+					<div class="item_quantity">
+						<select name="memb4" id="memb4">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+					</div>
+					<div class="add_to_cart">
+						<button onclick="addToCart('memb4', 'Class Package 2', 49.99)">&plus;&nbsp;Add to Cart</button>
+					</div>
+				</div> 
+			</div>
+		</section>
+	</div>
+
+		<div id="cart_controls_container">
+			<div id="cart_controls">
+				<div id="cart_count" onclick="goToCart()"></div>
+				<button id="clear_cart_btn"><i class="fa-solid fa-rectangle-xmark fa-lg"></i>&nbsp;&nbsp;Clear Cart</button>
+			</div>
+		</div>
+
+		<script>
+		function addToCart(itemName, itemDesc, price) {
+			let cart = JSON.parse(localStorage.getItem('cart')) || {};
+			let quantity = parseInt(document.getElementById(itemName).value);
+			cart[itemName] = {
+				quantity: (cart[itemName] && cart[itemName].quantity || 0) + quantity, 
+				name: itemDesc, 
+				price: price
+			};
+			localStorage.setItem('cart', JSON.stringify(cart));
+			updateCartCount();
+			/*alert('Cart Contents: ' + JSON.stringify(cart));*/
+			alert('Added to your cart:\n' + itemDesc + ' x ' + quantity);
+		}
+		function updateCartCount() {
+			let cart = JSON.parse(localStorage.getItem('cart')) || {};
+			let totalCount = 0;
+			for (let itemName in cart) {
+				totalCount += cart[itemName].quantity;
+			}
+			document.getElementById('cart_count').innerHTML = '<i class="fa-solid fa-cart-shopping fa-lg"></i>&nbsp;&nbsp;&nbsp;<b>' + totalCount + '</b> &nbsp;Items';
+		}
+		function goToCart() {
+			window.location.href = 'cart.html';
+		}
+		function clearCart() {
+			if (confirm("Are you sure you want to clear the cart?")) {
+				localStorage.removeItem('cart');
+				updateCartCount();
+			}
+		}
+		updateCartCount(); // Update cart count on page load
+		document.getElementById('clear_cart_btn').addEventListener('click', clearCart);
+		</script>
+
+
 		<footer>
 			<div class="footer-column" id="slogan">
 				<img src="images/logo.jpg" alt="LT logo">

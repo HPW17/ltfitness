@@ -146,7 +146,11 @@
 				itemRow.classList.add('cart_item_row');
 				itemRow.style.backgroundColor = '#353535';
 				let img = document.createElement('img');
-				img.src = 'images/' + itemName + '.jpg';
+				if (itemName.startsWith("memb")) {
+					img.src = 'images/adult_fitness/adultfitnessmockup1' + itemName.charAt(itemName.length - 1) + '.png';
+				} else {
+					img.src = 'images/' + itemName + '.jpg';
+				}
 				itemRow.appendChild(img);
 				let itemInfo = document.createElement('div');
 				itemInfo.classList.add('cart_item_info');
