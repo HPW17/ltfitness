@@ -1,0 +1,329 @@
+@charset "utf-8";
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+color: #82d95c; or rgb(130,217,92);
+background-color: #353535;
+*/
+
+.kid_ad_container {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr); 
+	grid-gap: 30px;
+	align-items: center;
+	background-color: white;
+	width: 70%;
+	margin: 0 auto;
+	align-items: stretch;
+}
+#kid_ad_text1 {
+	color: black;
+	font-size: 1.5em;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto 50px auto;
+}
+#kid_ad_text2 {
+	color: white;
+	font-size: 1.5em;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto 50px auto;
+}
+#kid_ad_text1 span, #kid_ad_text2 span, 
+.kid_program_text1 span {
+	color: #82d95c;
+	font-weight: bold;
+}
+.kid_ad_item {
+	background-color: #eee;
+	border: 1px solid #bbb;
+	filter: drop-shadow(0 0 0.8rem rgba(0, 0, 0, 0.5));
+	text-align: center;
+}
+.kid_ad_item img {
+	background-color: #353535;
+	width: 100%;
+	height: auto;
+}
+
+/* kidprograms.html */
+.kid_program_background {
+	background-color: white;
+	padding: 60px 0;
+}
+.kid_program_containter {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+}
+.kid_program_text1 {
+	color: black;
+	font-size: 1.5em;
+	text-align: center;
+	margin: 0 auto 50px auto;
+	padding: 50px 30px;
+}
+.kid_program_icons {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-content: center;
+	grid-auto-flow: dense;
+	grid-gap: 20px;
+	width: 100%;
+	filter: drop-shadow(0 0 0.8rem rgba(0, 0, 0, 0.5));
+}
+.program_icon {
+	background-color: #353535;
+	font-size: 1.2em;
+}
+.check-out {
+	background: black;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+.card_wrap {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 30px;
+	padding: 2rem 0;
+	justify-content: center;
+	width: 70%;
+	margin: auto;
+}
+.card {
+	background: #353535;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #666;
+}
+.card h2 {
+	display: inline;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	border-bottom: 1px solid #82d95c;
+	white-space: nowrap;
+}
+.card h2 span {
+	color: #82d95c;
+}
+.card h3 {
+	font-size: 1.3em;
+	margin-top: 1.5em;
+}
+.card p {
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+
+/* adultprograms.html */
+.adult_program_icons {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-content: center;
+	grid-auto-flow: dense;
+	grid-gap: 20px;
+	width: 100%;
+	filter: drop-shadow(0 0 0.8rem rgba(0, 0, 0, 0.5));
+}
+
+/* nutrition.html */
+.kid_nutrition_icons {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-content: center;
+	grid-auto-flow: dense;
+	grid-gap: 20px;
+	width: 100%;
+	filter: drop-shadow(0 0 0.8rem rgba(0, 0, 0, 0.5));
+}
+#promise {
+	background-color: #353535;
+	text-align: center;
+}
+.promise_text {
+	width: 60%;
+	margin: 0 auto;
+	padding: 50px 0;
+	font-size: 1.1em;
+}
+#promise_item_container {
+	display: grid;
+	grid-template-columns: 1fr
+	grid-gap: 30px;
+	width: 90%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.promise_item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+	background-color: #ddd;
+	margin-bottom: 30px;
+}
+.promise_item_guide {
+	display: flex;
+	align-items: center; 
+	min-width: 30%;
+	max-width: 60%;
+	color: black;
+}
+.promise_item_no {
+	background-color: #82d95c;
+	min-width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+.promise_item_desc {
+	text-align: center;
+	padding: 0 20px;
+	font-size: 1.1em;
+}
+.promise_item_desc h3 {
+	margin: 0;
+}
+.promise_item_img img {
+	width: 100%;
+	height: auto;
+}
+#plate {
+	background: white;
+	text-align: center;
+	color: black;
+}
+.plate_text {
+	width: 60%;
+	margin: 0 auto;
+	padding: 50px 0;
+	font-size: 1.1em;
+}
+#plate_img img {
+	width: 90%;
+	height: auto;
+	margin: 20px;
+}
+#plate_link {
+	background-color: #82d95c;
+	margin: 0;
+	padding: 20px;
+}
+#plate_link a {
+	color: blue;
+}
+#plate_link a:hover {
+	color: red;
+}
+
+/* membership.html */
+#membership_ad {
+	text-align: center;
+}
+#membership_ad img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+#membership_separator {
+	width: 40%;
+	margin: 20px auto 0 auto;
+	border-bottom: 2px solid #82d95c;
+}
+.membership1 {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: black;
+	padding: 60px 0;
+}
+
+
+/* 
+	-------------------------------------------------------------------
+	Responsive style settings for larger screens
+*/
+@media screen and (min-width: 680px) {
+
+	.kid_ad_container {
+		grid-template-columns: repeat(3, 1fr); 
+	}
+
+	/* kidprograms.html */
+	.kid_program_containter {
+		width: 80%;
+	}
+	.kid_program_icons {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	/* adultprograms.html */
+	.adult_program_icons {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+
+@media screen and (min-width: 900px) {
+	.card_wrap {
+		grid-template-columns: repeat(3, 1fr);
+		width: 85%;
+	}
+
+	/* nutrition.html */
+	#promise_item_container {
+		width: 80%;
+	}
+	/*.promise_item:nth-child(even) {
+		flex-direction: row-reverse;
+	}*/
+	.promise_item_no {
+		min-width: 60px;
+		height: 60px;
+		line-height: 60px;
+		font-size: 30px;
+	}
+	.promise_item_desc {
+		padding: 0 50px;
+	}
+	#plate_img img {
+		width: 80%;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+	/* kidprograms.html */
+	.kid_program_containter {
+		flex-direction: row;
+	}
+	.kid_program_text1 {
+		min-width: 30%;
+		max-width: 40%;
+	}
+	.kid_program_icons {
+		font-size: 0.6em;
+	}
+
+	/* adultprograms.html */
+	.adult_program_icons {
+		font-size: 0.6em;
+	}
+
+	/* nutrition.html */
+	#promise_item_container {
+		width: 50%;
+	}
+	#plate_img img {
+		width: 70%;
+		height: auto;
+	}
+}
