@@ -6,6 +6,14 @@ color: #82d95c; or rgb(130,217,92);
 background-color: #353535;
 */
 
+/* kid.html */
+#kid_banner_image {
+	width: 70%;
+	height: 250px;
+	background-image: url("../images/kid_banner.jpg");
+	background-size: cover;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+}
 .kid_ad_container {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr); 
@@ -116,6 +124,15 @@ background-color: #353535;
 .card p {
 	font-size: 1.1em;
 	line-height: 1.5em;
+}
+
+/* adult.html */
+#adult_banner_image {
+	width: 70%;
+	height: 250px;
+	background-image: url("../images/adult_banner.jpg");
+	background-size: cover;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
 }
 
 /* adultprograms.html */
