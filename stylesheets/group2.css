@@ -262,6 +262,138 @@ background-color: #353535;
 	padding: 60px 0;
 }
 
+/* about.html */
+#about_banner_image {
+	width: 70%;
+	height: 250px;
+	background-image: url("../images/about_banner.jpg");
+	background-size: cover;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+}
+#about_story, #about_impact, 
+#staff_list, #facilities_info {
+	background-color: white;
+	color: black;
+	text-align: center;
+	padding: 70px 0;
+}
+#about_mission {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 70px 0;
+}
+.about_content {
+	width: 70%;
+	margin: 0 auto;
+	line-height: 1.5em;
+}
+.about_content h2 {
+	white-space: nowrap;
+	line-height: 1.5em;
+}
+.about_content h3 {
+	display: inline-block;
+	padding: 20px 0 5px 0;
+	border-bottom: 2px solid #82d95c;
+}
+.about_content ul {
+	list-style-type: square;
+}
+.about_content li {
+	margin: 10px 0;
+	text-align: left;
+}
+#about_impact_list {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* staff.html */
+#staff_banner_image {
+	width: 70%;
+	height: 250px;
+	background-image: url("../images/staff_banner.jpg");
+	background-size: cover;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+}
+#staff_content {
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+}
+#staff_text {
+	font-size: 1.5em;
+	width: 60%;
+	margin: 0 auto;
+}
+.staff_member1 {
+	background-color: #353535;
+	color: white;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	margin: 30px 0;
+}
+.staff_member2 {
+	background-color: #353535;
+	color: white;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	margin: 30px 0;
+}
+.staff_picture1 {
+	justify-self: start;
+}
+.staff_picture2 {
+	justify-self: end;
+}
+.staff_profile {
+	padding: 20px 40px;
+}
+#staff1, #staff3 {
+	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+	max-width: 100%;
+	border-left: 10px solid #82d95c;
+	box-sizing: border-box;
+}
+#staff2, #staff4 {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+	max-width: 100%;
+	border-right: 10px solid #82d95c;
+	box-sizing: border-box;
+}
+
+/* facilities.html */
+#facilities_banner_image {
+	width: 70%;
+	height: 250px;
+	background-image: url("../images/facilities_banner.jpg");
+	background-size: cover;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+}
+#facilities_content {
+	width: 70%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+#fac_slideshow {
+	background-color: white;
+	padding-bottom: 60px;
+	margin-top: -80px;
+	border: 1px solid white;
+}
+#fac_slideshow h2 {
+	text-align: center;
+	color: black;
+}
+#fac-slideshow-container {
+	width: 70%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	position: relative;
+	margin: auto;
+}
+	
 
 /* 
 	-------------------------------------------------------------------
@@ -313,6 +445,14 @@ background-color: #353535;
 	#plate_img img {
 		width: 80%;
 		height: auto;
+	}
+
+	/* staff.html */
+	#staff_content {
+		width: 70%;
+	}
+	#pic1 {
+		border-left: 15px solid #82d95c;
 	}
 }
 
