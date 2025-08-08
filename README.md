@@ -2,7 +2,7 @@
 
 ## LT Fitness Performance LLC
 
-Creating a Website for a health and wellness non-profit organization.
+Creating a website for a health and wellness non-profit organization.
 
 > https://hpw17.github.io/ltfitness/
 
