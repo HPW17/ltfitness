@@ -1,5 +1,6 @@
 # **LT Fitness Performance LLC**
 ITC4850 Capstone Information Technology Project
+
 Creating a website for a health and wellness non-profit organization.
 > https://hpw17.github.io/ltfitness/
 
